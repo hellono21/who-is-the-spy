@@ -1,0 +1,6 @@
+
+{
+  "name": "See vite.config.ts",
+  "short_name": "Deprecated",
+  "description": "This file is superseded by the manifest configuration in vite.config.ts"
+}
