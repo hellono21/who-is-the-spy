@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Who is the Spy</title>
+    
+    <!-- PWA meta tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="我是卧底" />
+    <meta name="theme-color" content="#121212" />
+    
+    <!-- iOS Icons -->
+    <link rel="apple-touch-icon" href="icon-192.png" />
+    <link rel="icon" type="image/png" href="icon-192.png" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.loli.net/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.loli.net/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS CDN (No PostCSS Build Required) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#38BDF8', // Sky 400
+              'primary-hover': '#0EA5E9', // Sky 500
+              charcoal: '#1E1E20',
+              'charcoal-surface': '#27272A', // Zinc 800
+              'charcoal-element': '#3F3F46', // Zinc 700
+              spy: '#F87171', // Red 400
+              blank: '#A855F7', // Purple 500
+            },
+            boxShadow: {
+              neon: '0 0 20px -5px rgba(56, 189, 248, 0.5)',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+              'slide-up': 'slideUp 0.5s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite-plugin-pwa": "https://esm.sh/vite-plugin-pwa@^1.2.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/who-is-the-spy/assets/index-xnOC65UP.js"></script>
+  <link rel="stylesheet" crossorigin href="/who-is-the-spy/assets/index-CZe_Ax2X.css">
+<link rel="manifest" href="/who-is-the-spy/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/who-is-the-spy/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
